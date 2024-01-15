@@ -1,7 +1,6 @@
 .pytest_cache
 .vscode
 bin
-pyproject.toml
 venv
 docs/build
 **/__pycache__

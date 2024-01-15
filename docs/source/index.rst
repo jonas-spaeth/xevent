@@ -4,16 +4,36 @@
    contain the root `toctree` directive.
 
 Documentation of xevent
-==================================
+=======================
+
+Hey! This is the documentation of xevent. It is a simple package to create event composites based on a list of events and some xarray Dataset or DataArray.
+
+Installation
+------------
+
+.. code-block:: bash
+
+    pip install xevent
+
+
+Examples
+--------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+
+   api
+   examples/example1
+
+Credits
+-------
+
+`Jonas Späth <https://www.wavestoweather.de/people/phd_students/jonas-spaeth/index.html>`_, 2024
 
 
-.. automodule:: core
-   :members:
-   
+
+.. include:: api.rst
+
 
 Indices and tables
 ==================
