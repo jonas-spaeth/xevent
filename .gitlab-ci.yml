@@ -22,6 +22,7 @@ pages:
   before_script:
     - apt-get update && apt-get install make --no-install-recommends -y
     - python -m pip install sphinx furo pydata_sphinx_theme
+    - pip install -r docs/requirements.txt
   script:
     - cd docs && make html
   after_script:
@@ -29,3 +30,4 @@ pages:
   artifacts:
     paths:
     - public
+    
