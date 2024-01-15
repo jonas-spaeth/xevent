@@ -31,3 +31,11 @@ pages:
   artifacts:
     paths:
     - public
+
+install:
+  stage: install
+  script:
+    - pip install -r requirements.txt
+    - pip install -e .
+    - python -c "import xevent"
+   
