@@ -11,7 +11,7 @@ Documentation of xevent
    :caption: Contents:
 
 
-.. automodule:: xevent.composite
+.. automodule:: core
    :members:
    
 
