@@ -5,6 +5,7 @@ stages:
   - test
   - deploy
   - install
+  - release
 
 format:
   stage: format
@@ -30,7 +31,7 @@ pages:
     - mv docs/build/html/ ./public/
   artifacts:
     paths:
-    - public
+      - public
 
 install:
   stage: install
@@ -38,7 +39,6 @@ install:
     - pip install -r requirements.txt
     - pip install -e .
     - python -c "import xevent"
-   
 
 release:
   stage: release
@@ -49,4 +49,3 @@ release:
     - twine upload --repository-url https://pypi.org/legacy/ --skip-existing --verbose dist/* -u __token__ -p ${PYPI_API_TOKEN}
   only:
     - tags
-    
