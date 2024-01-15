@@ -16,14 +16,14 @@ Installation
     pip install xevent
 
 
-Examples
---------
+Getting started
+---------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   api
    examples/example1
+   api
 
 Credits
 -------

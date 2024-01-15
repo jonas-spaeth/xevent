@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 import xarray as xr
-from core import composite
+from xevent import composite
 
 
 class TestComposite(unittest.TestCase):

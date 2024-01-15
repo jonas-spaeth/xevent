@@ -2,5 +2,5 @@ API
 ===
 
 
-.. automodule:: core
+.. automodule:: xevent
    :members:

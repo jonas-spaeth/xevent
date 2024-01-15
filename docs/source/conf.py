@@ -22,7 +22,7 @@ extensions = ["sphinx.ext.autodoc", "sphinx.ext.napoleon", "nbsphinx"]
 
 templates_path = ["_templates"]
 exclude_patterns = []
-add_module_names = False
+# add_module_names = False
 
 # add icon
 
