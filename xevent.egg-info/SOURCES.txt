@@ -3,8 +3,6 @@
 README.md
 pyproject.toml
 requirements.txt
-core/__init__.py
-core/composite.py
 docs/Makefile
 docs/make.bat
 docs/build/doctrees/environment.pickle
@@ -59,6 +57,8 @@ tests/test_composite.py
 tests/__pycache__/test_composite.cpython-311.pyc
 tests/__pycache__/test_composite.cpython-38-PYTEST.pyc
 tests/__pycache__/test_composite.cpython-38.pyc
+xevent/__init__.py
+xevent/composite.py
 xevent.egg-info/PKG-INFO
 xevent.egg-info/SOURCES.txt
 xevent.egg-info/dependency_links.txt

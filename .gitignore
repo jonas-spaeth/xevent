@@ -3,4 +3,5 @@
 bin
 venv
 docs/build
-**/__pycache__
+xevent.egg-info
+*/__pycache__
