@@ -38,5 +38,4 @@ pages:
   script:
     - pip install .
     - python -c "import xevent"
-  only:
-    - main
+    
