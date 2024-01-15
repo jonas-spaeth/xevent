@@ -5,3 +5,5 @@ venv
 docs/build
 xevent.egg-info
 */__pycache__
+bin
+dist

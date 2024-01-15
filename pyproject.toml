@@ -12,7 +12,7 @@ authors = [
     { name = "Jonas Spaeth", email = "jonas.spaeth@physik.uni-muenchen.de" },
 ]
 description = "Create event composites from xarray data."
-readme = "README.rst"
+readme = "README.md"
 requires-python = ">=3.10"
 keywords = ["xarray", "event", "composite"]
 license = { text = "BSD-3-Clause" }
