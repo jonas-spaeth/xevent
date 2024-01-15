@@ -31,11 +31,3 @@ pages:
   artifacts:
     paths:
     - public
-
- install:
-  stage: install
-  image: python:latest
-  script:
-    - pip install .
-    - python -c "import xevent"
-    
