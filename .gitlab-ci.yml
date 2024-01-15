@@ -12,12 +12,16 @@ format:
   script:
     - pip install black
     - black --check .
+  except:
+    - tags
 
 test:
   stage: test
   script:
     - pip install -r requirements.txt
     - python -m unittest discover -s tests
+  except:
+      - tags
 
 pages:
   stage: deploy
@@ -32,13 +36,17 @@ pages:
   artifacts:
     paths:
       - public
-
+  except:
+      - tags
+      
 install:
   stage: install
   script:
     - pip install -r requirements.txt
     - pip install -e .
     - python -c "import xevent"
+  except:
+    - tags
 
 release:
   stage: release
@@ -46,6 +54,6 @@ release:
   script:
     - pip install twine
     - python setup.py sdist bdist_wheel
-    - twine upload --repository-url https://pypi.org/legacy/ --skip-existing --verbose dist/* -u __token__ -p ${PYPI_API_TOKEN}
+    - twine upload --repository pypi --skip-existing --verbose dist/* -u __token__ -p ${PYPI_API_TOKEN}
   only:
     - tags
