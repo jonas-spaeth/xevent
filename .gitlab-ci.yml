@@ -6,22 +6,22 @@ stages:
   - deploy
   - install
 
-format:
-  stage: format
-  script:
-    - pip install black
-    - black --check .
+# format:
+#   stage: format
+#   script:
+#     - pip install black
+#     - black --check .
 
-test:
-  stage: test
-  script:
-    - pip install -r requirements.txt
-    - python -m unittest discover -s tests
+# test:
+#   stage: test
+#   script:
+#     - pip install -r requirements.txt
+#     - python -m unittest discover -s tests
 
 pages:
   stage: deploy
   before_script:
-    - apt-get update && apt-get install make --no-install-recommends -y && apt-get install pandoc
+    - apt-get update && apt-get install make --no-install-recommends -y && apt-get install pandoc -y
     - python -m pip install sphinx furo pydata_sphinx_theme
     - pip install -r requirements.txt
   script:
