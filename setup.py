@@ -7,4 +7,4 @@ def get_version():
 
 
 if __name__ == "__main__":
-    setup(version=get_version())
+    setup(version=get_version(), packages=["xevent"])
