@@ -8,6 +8,9 @@ Documentation of xevent
 
 Hey! This is the documentation of xevent. It is a simple package to create event composites based on a list of events and some xarray Dataset or DataArray.
 
+
+Current version: |version|
+
 Installation
 ------------
 
@@ -31,9 +34,10 @@ Credits
 `Jonas Späth <https://www.wavestoweather.de/people/phd_students/jonas-spaeth/index.html>`_, 2024
 
 
+Quick loook at the API
+----------------------
 
-.. include:: api.rst
-
+.. autofunction:: xevent.composite
 
 Indices and tables
 ==================
