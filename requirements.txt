@@ -51,15 +51,12 @@ nh3==0.2.15
 numpy==1.26.3
 packaging==23.2
 pandas==2.1.4
-pandoc==2.3
 pandocfilters==1.5.0
 parso==0.8.3
 partd==1.4.1
 pexpect==4.9.0
 pkginfo==1.9.6
 platformdirs==4.1.0
-plumbum==1.8.2
-ply==3.11
 prompt-toolkit==3.0.43
 psutil==5.9.7
 ptyprocess==0.7.0
@@ -101,4 +98,5 @@ urllib3==2.1.0
 wcwidth==0.2.13
 webencodings==0.5.1
 xarray==2023.12.0
+-e git+https://gitlab.lrz.de/ru35hub/xevent@f9d65ddc553257f49dfbf0b0cfc4f58ec1624717#egg=xevent
 zipp==3.17.0

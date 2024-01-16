@@ -7,7 +7,7 @@ py-modules = ["xevent"]
 
 [project]
 name = "xevent"
-version = "0.2"
+version = "0.3"
 authors = [
     { name = "Jonas Spaeth", email = "jonas.spaeth@physik.uni-muenchen.de" },
 ]

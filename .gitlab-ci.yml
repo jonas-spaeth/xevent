@@ -33,11 +33,18 @@ pages:
     paths:
       - public
 
-install:
+install-local:
   stage: install
   script:
     - pip install -r requirements.txt
     - pip install -e .
+    - python -c "import xevent"
+
+
+install-public:
+  stage: install
+  script:
+    - pip install xevent
     - python -c "import xevent"
 
 release:
