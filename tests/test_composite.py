@@ -38,13 +38,13 @@ class TestComposite(unittest.TestCase):
         # Test composite without interpolation
         relative_coords = {"x": np.arange(-5, 6), "y": np.arange(-5, 6)}
 
-        print(self.data)
         result = composite(self.data, self.events, relative_coords, interpolate=False)
-        print(result)
+
         self.assertIsInstance(result, xr.DataArray)
         self.assertEqual(result.dims, ("event", "rel_x", "rel_y"))
 
     def test_composite_with_interpolation(self):
+        # TODO: implement
         pass
 
     def test_composite_missing_coord_labels(self):
@@ -52,6 +52,22 @@ class TestComposite(unittest.TestCase):
         result = composite(self.data, self.events, relative_coords, interpolate=False)
         print(result)
 
+    def test_composite_irregular_grid(self):
+        random_x = np.random.choice(self.data.x, size=50, replace=False)
+        random_y = np.random.choice(self.data.y, size=50, replace=False)
+        data_irreg = self.data.sel(x=random_x, y=random_y)
+
+        relative_coords = {"x": np.arange(-5, 6), "y": np.arange(-5, 6)}
+        result = composite(data_irreg, self.events, relative_coords, interpolate=False)
+        self.assertIsNotNone(result.mean())
+
+    def test_composite_index_based(self):
+        # TODO: implement
+        pass
+
+    def test_composite_rel_coords_depend_on_event(self):
+        # TODO: implement
+        pass
 
 if __name__ == "__main__":
     unittest.main()
